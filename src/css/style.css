@@ -115,13 +115,20 @@ figcaption a:hover,
 }
 
 .debate,
-.opinion {
+.opinion,
+.more-stories {
     border-bottom: 20px solid var(--border-gray);
+}
+
+.bottom-debate,
+.more-stories-top {
+    border-top: solid 1px var(--gray-line);
 }
 
 .top-debate,
 .opinion article,
-.top-story {
+.top-story,
+.more-stories article {
     border-bottom: solid 1px var(--gray-line);
 }
 
@@ -131,7 +138,6 @@ figcaption a:hover,
 
 .bottom-debate {
     border-bottom: solid 4px var(--gray-line);
-    border-top: solid 1px var(--gray-line);
 }
 
 /*

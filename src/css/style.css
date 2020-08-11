@@ -21,8 +21,8 @@
 */
 
 :root {
-    --border-gray: #f4f5f7;
-    --gray-line: #d9d9d9;
+  --border-gray: #f4f5f7;
+  --gray-line: #d9d9d9;
 }
 
 .bg-red {
@@ -35,6 +35,10 @@
 
 .cat-box-color {
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-culture-box {
+    background-color: #c2d4d7;
 }
 
 .text-red {
@@ -71,11 +75,15 @@
   width: 90px;
 }
 
+.culture-box {
+    width: 75px;
+}
+
 article p {
   font-size: smaller;
 }
 
-figcaption a:hover,
+.featured-stories figcaption a:hover,
 .debate-opinion h6 > a:hover {
   border-bottom: 1px solid red;
 }
@@ -90,16 +98,17 @@ figcaption a:hover,
 
 .debate-opinion,
 .debate-opinion a {
-    font-size: smaller;
+  font-size: smaller;
 }
 
 .debate-opinion img {
-    width: 60px;
+  width: 60px;
 }
 
 .vs {
-    left: 46%;
-    top: 46%;
+  left: 46%;
+  top: 46%;
+  z-index: 1;
 }
 
 /*
@@ -111,33 +120,33 @@ figcaption a:hover,
 .debate,
 .featured-stories,
 .more-stories {
-    border-top: 20px solid var(--border-gray);
+  border-top: 20px solid var(--border-gray);
 }
 
 .debate,
 .opinion,
 .more-stories {
-    border-bottom: 20px solid var(--border-gray);
+  border-bottom: 20px solid var(--border-gray);
 }
 
 .bottom-debate,
 .more-stories-top {
-    border-top: solid 1px var(--gray-line);
+  border-top: solid 1px var(--gray-line);
 }
 
 .top-debate,
 .opinion article,
 .top-story,
 .more-stories article {
-    border-bottom: solid 1px var(--gray-line);
+  border-bottom: solid 1px var(--gray-line);
 }
 
 .top-debate {
-    border-top: solid 4px var(--gray-line);
+  border-top: solid 4px var(--gray-line);
 }
 
 .bottom-debate {
-    border-bottom: solid 4px var(--gray-line);
+  border-bottom: solid 4px var(--gray-line);
 }
 
 /*
@@ -149,8 +158,8 @@ figcaption a:hover,
 */
 
 @media (min-width: 992px) {
-    .vs {
-        left: 47%;
-        top: 44%;
-    }    
+  .vs {
+    left: 47%;
+    top: 44%;
+  }
 }

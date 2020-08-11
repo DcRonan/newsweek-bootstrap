@@ -75,7 +75,8 @@ article p {
   font-size: smaller;
 }
 
-figcaption a:hover {
+figcaption a:hover,
+.debate-opinion h6 > a:hover {
   border-bottom: 1px solid red;
 }
 
@@ -96,24 +97,41 @@ figcaption a:hover {
     width: 60px;
 }
 
-.debate {
-    border-bottom: 20px solid var(--border-gray);
+.vs {
+    left: 46%;
+    top: 46%;
+}
+
+/*
+==========================
+      BORDERS (CSS)
+==========================
+*/
+
+.debate,
+.featured-stories,
+.more-stories {
     border-top: 20px solid var(--border-gray);
+}
+
+.debate,
+.opinion {
+    border-bottom: 20px solid var(--border-gray);
+}
+
+.top-debate,
+.opinion article,
+.top-story {
+    border-bottom: solid 1px var(--gray-line);
 }
 
 .top-debate {
     border-top: solid 4px var(--gray-line);
-    border-bottom: solid 1px var(--gray-line);
 }
 
 .bottom-debate {
     border-bottom: solid 4px var(--gray-line);
     border-top: solid 1px var(--gray-line);
-}
-
-.vs {
-    left: 46%;
-    top: 46%;
 }
 
 /*

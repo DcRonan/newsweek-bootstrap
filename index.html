@@ -21,28 +21,28 @@
   <header class="row container-fluid bg-red text-white d-flex flex-column no-gutters">
     <!-- TOP NAV -->
     <nav class="bg-red d-flex justify-content-between align-items-center">
-        <div>
+      <div>
+        <a href="#">
+          <img class="main-logo" src="./src/assets/images/newsweek.svg" alt="newsweek main logo">
+        </a>
+      </div>
+      <ul class="d-flex align-items-center pt-3">
+        <li>
           <a href="#">
-            <img class="main-logo" src="./src/assets/images/newsweek.svg" alt="newsweek main logo">
+            <i class="fas fa-user text-white-50"></i>
           </a>
-        </div>
-        <ul class="d-flex align-items-center pt-3">
-          <li>
-            <a href="#">
-              <i class="fas fa-user text-white-50"></i>
-            </a>
-          </li>
-          <li class="ml-3 mr-3">
-            <button class="bg-yellow sub-button rounded-pill p-2 text-dark font-weight-bold" type="submit">
-              SUBSCRIBE >
-            </button>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fas fa-bars text-white-50"></i>
-            </a>
-          </li>
-        </ul>
+        </li>
+        <li class="ml-3 mr-3">
+          <button class="bg-yellow sub-button rounded-pill p-2 text-dark font-weight-bold" type="submit">
+            SUBSCRIBE >
+          </button>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-bars text-white-50"></i>
+          </a>
+        </li>
+      </ul>
     </nav>
     <!-- MIDDLE NAV -->
     <nav class="col- bg-warning mt-2 mb-2 p-2 d-none d-lg-block">
@@ -56,111 +56,130 @@
   <!-- MAIN -->
   <main class="row container-fluid no-gutters">
     <!-- TOP STORY -->
-    <section class="col-12 d-md-none">
-      <h6>
+    <section class="col-12 d-md-none mt-4">
+      <h6 class="text-secondary">
         TOP STORY
       </h6>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/joe-biden.jpg" alt="picture of Joe Biden">
+            <span class="red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              NEWS
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold">
+              Biden Calls for Increased Funding for Police to Fuel Reform Efforts
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
+          Former Vice President Joe Biden denied President Donald Trump's unfounded claim that he supports defunding the
+          police on Wednesday and instead called for additional police funding to boost reform efforts and support for
+          police officers that have to deal with "god awful problems."
         </p>
       </article>
     </section>
     <!-- FEATURED STORIES -->
     <section class="order-md-first col-12 col-md-5 col-lg-3">
-      <h6>
+      <h6 class="text-secondary">
         FEATURED STORIES
       </h6>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/featured/mike-pence.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              POLITICS
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              Mike Pence Calls Chief Justice Roberts a 'Disappointment' to Conservatives
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
+          The vice president made the comment in an interview with the Christian Broadcasting Network.
         </p>
       </article>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/featured/mail-ballots.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              U.S.
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              Tennessee Supreme Court Allows Mail-In Ballots—Only for Vulnerable Voters
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
-        </p>
+          "The court should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project. </p>
       </article>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/featured/atomic-bomb.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              MY TURN
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              'My Grandfather and Mother Survived The Hiroshima Atomic Bomb'
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
-        </p>
+          My grandfather, Dr. Ken Takeuchi, was the director of the Hiroshima Red Cross Hospital. On August 4, 1945, he
+          had talked to staff and encouraged them to arrive at work earlier. At 8.15am on August 6, when the atomic bomb
+          hit, many staff were inside the hospital—his pep talk had saved lives. </p>
       </article>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/featured/donald-trump.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              WORLD
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              Bolton Says U.S. Should Overthrow Iran's Ayatollahs, Give Power to People
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
-        </p>
+          Bolton—long an advocate of regime change in Tehran—said Trump's "maximum pressure" Iran strategy was not
+          enough. </p>
       </article>
-      <article class="bg-warning p-2">
+      <article>
         <figure>
-          <div class="p-5 bg-info position-relative">
-            img
-            <span class="position-absolute fixed-bottom p-2 bg-danger col-5">
-              TEXT
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/featured/jail-cell.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              NEWS
             </span>
           </div>
           <figcaption>
-            title
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              Inmate Cried 'I Can't Breathe' As Officers Pinned Him Down for 12 Minutes
+            </a>
           </figcaption>
         </figure>
         <p>
-          text here
-        </p>
+          Bodycam footage from inside Forsyth County Detention Center, showing the lead-up to John Neville's death, has
+          been released. </p>
       </article>
     </section>
     <!-- THE DEBATE + OPINION -->
@@ -859,37 +878,37 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- WORLD -->
     <h5 class="text-danger font-weight-bold">
@@ -917,37 +936,37 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- BUSINESS -->
     <h5 class="text-danger font-weight-bold">
@@ -975,37 +994,37 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- TECH & SCIENCE -->
     <h5 class="text-danger font-weight-bold">
@@ -1033,37 +1052,37 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- CULTURE -->
     <h5 class="text-danger font-weight-bold">
@@ -1091,37 +1110,37 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- SPORTS -->
     <h5 class="text-danger font-weight-bold">
@@ -1149,99 +1168,98 @@
         </figure>
       </article>
       <div class="flex-column">
-      <article class="bg-warning p-2">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-      <article class="bg-warning p-2 border-top border-secondary">
-        <figure class="d-flex justify-content-between p-2 bg-info">
-          <div>
-            img
-          </div>
-          <figcaption>
-            caption
-          </figcaption>
-        </figure>
-      </article>
-    </div>
+        <article class="bg-warning p-2">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+        <article class="bg-warning p-2 border-top border-secondary">
+          <figure class="d-flex justify-content-between p-2 bg-info">
+            <div>
+              img
+            </div>
+            <figcaption>
+              caption
+            </figcaption>
+          </figure>
+        </article>
+      </div>
     </section>
     <!-- SUBSCRIBE + NEWSLETTER -->
     <section class="row no-gutters d-lg-flex">
-    <!-- SUBSCRIBE -->
-    
-    <section class="bg-secondary p-2 d-flex flex-column align-items-center flex-md-row col-12 col-lg-6">
-      <!-- <h6 class="text-danger font-weight-bold">
+      <!-- SUBSCRIBE -->
+      <section class="bg-secondary p-2 d-flex flex-column align-items-center flex-md-row col-12 col-lg-6">
+        <!-- <h6 class="text-danger font-weight-bold">
         SUBSCRIBE
       </h6> -->
         <div class="col-md-6 d-flex flex-column align-items-center">
-        <div class="p-5 bg-danger w-50">
-          img1
-        </div>
-        <div class="p-5 bg-info w-50 z-index-1">
-          img2
-        </div>
+          <div class="p-5 bg-danger w-50">
+            img1
+          </div>
+          <div class="p-5 bg-info w-50 z-index-1">
+            img2
+          </div>
         </div>
         <div class="col-md-6 d-flex flex-column align-items-center">
-        <h6>
-          title
-        </h6>
-        <p>
-          text
-        </p>
-        <button type="submit" class="p-2 text-white bg-danger">
-          SUBSCRIBE >
-        </button>
+          <h6>
+            title
+          </h6>
+          <p>
+            text
+          </p>
+          <button type="submit" class="p-2 text-white bg-danger">
+            SUBSCRIBE >
+          </button>
         </div>
-    </section>
-    <!-- NEWSLETTER -->
-    <section class="col-12 d-md-flex row no-gutters align-items-center col-lg-6">
-      <!-- <h6 class="text-danger font-weight-bold">
+      </section>
+      <!-- NEWSLETTER -->
+      <section class="col-12 d-md-flex row no-gutters align-items-center col-lg-6">
+        <!-- <h6 class="text-danger font-weight-bold">
         NEWSLETTER
       </h6> -->
-      <div class="d-none d-md-block bg-info p-4 col-md-3">
-        img
-      </div>
-      <div class="bg-secondary p-4 d-flex flex-column align-items-center col-md-9">
-        <h5>
-          The Starting 5
-        </h5>
-        <p>
-          text
-        </p>
-        <input type="email" name="email" placeholder="Email address" class="bg-white w-100">
-        <button type="submit" class="p-2 text-white bg-danger w-100 mt-3">
-          FREE SIGN UP >
-        </button>
-      </div>
+        <div class="d-none d-md-block bg-info p-4 col-md-3">
+          img
+        </div>
+        <div class="bg-secondary p-4 d-flex flex-column align-items-center col-md-9">
+          <h5>
+            The Starting 5
+          </h5>
+          <p>
+            text
+          </p>
+          <input type="email" name="email" placeholder="Email address" class="bg-white w-100">
+          <button type="submit" class="p-2 text-white bg-danger w-100 mt-3">
+            FREE SIGN UP >
+          </button>
+        </div>
+      </section>
     </section>
-  </section>
   </main>
   <!-- FOOTER -->
   <footer class="row container-fluid no-gutters">
     <section class="p-2 bg-warning col-12 d-md-flex justify-content-between">
       <div class="d-md-flex">
-      <div>
-        LOGO
-      </div>
-      <span>
-        © 2020 NEWSWEEK
-      </span>
+        <div>
+          LOGO
+        </div>
+        <span>
+          © 2020 NEWSWEEK
+        </span>
       </div>
       <div>
         <a href="#">

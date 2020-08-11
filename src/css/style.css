@@ -20,6 +20,11 @@
 ================
 */
 
+:root {
+    --border-gray: #f4f5f7;
+    --gray-line: #d9d9d9;
+}
+
 .bg-red {
   background-color: #f72210;
 }
@@ -72,4 +77,56 @@ article p {
 
 figcaption a:hover {
   border-bottom: 1px solid red;
+}
+
+/*
+=======================================
+
+        THE DEBATE + OPINION
+
+=======================================
+*/
+
+.debate-opinion,
+.debate-opinion a {
+    font-size: smaller;
+}
+
+.debate-opinion img {
+    width: 60px;
+}
+
+.debate {
+    border-bottom: 20px solid var(--border-gray);
+    border-top: 20px solid var(--border-gray);
+}
+
+.top-debate {
+    border-top: solid 4px var(--gray-line);
+    border-bottom: solid 1px var(--gray-line);
+}
+
+.bottom-debate {
+    border-bottom: solid 4px var(--gray-line);
+    border-top: solid 1px var(--gray-line);
+}
+
+.vs {
+    left: 46%;
+    top: 46%;
+}
+
+/*
+=======================================
+
+             MEDIA QUERIES
+
+=======================================
+*/
+
+@media (min-width: 992px) {
+    .vs {
+        left: 47%;
+        top: 44%;
+    }    
 }

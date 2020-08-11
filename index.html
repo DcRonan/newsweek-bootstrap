@@ -18,15 +18,15 @@
 
 <body class="container-fluid">
   <!-- HEADER -->
-  <header class="row container-fluid bg-red text-white d-flex flex-column no-gutters">
+  <header class="row bg-red text-white d-flex flex-column no-gutters">
     <!-- TOP NAV -->
-    <nav class="bg-red d-flex justify-content-between align-items-center">
+    <nav class="bg-red row d-flex justify-content-between align-items-center">
       <div>
-        <a href="#">
+        <a class="pl-2" href="#">
           <img class="main-logo" src="./src/assets/images/newsweek.svg" alt="newsweek main logo">
         </a>
       </div>
-      <ul class="d-flex align-items-center pt-3">
+      <ul class="d-flex align-items-center pt-3 pr-3">
         <li>
           <a href="#">
             <i class="fas fa-user text-white-50"></i>
@@ -45,18 +45,18 @@
       </ul>
     </nav>
     <!-- MIDDLE NAV -->
-    <nav class="col- bg-warning mt-2 mb-2 p-2 d-none d-lg-block">
+    <nav class="bg-warning row d-none d-lg-block">
       top-nav
     </nav>
     <!-- BOTTOM-NAV -->
-    <nav class="col- bg-warning p-2 mb-2 d-none d-lg-block">
+    <nav class="bg-warning row d-none d-lg-block">
       bottom-nav
     </nav>
   </header>
   <!-- MAIN -->
   <main class="row no-gutters">
     <!-- TOP STORY -->
-    <section class="col-12 d-md-none mt-4 top-story">
+    <section class="row p-3 d-md-none mt-4 top-story">
       <h6 class="text-secondary">
         TOP STORY
       </h6>
@@ -83,7 +83,7 @@
       </article>
     </section>
     <!-- FEATURED STORIES -->
-    <section class="order-md-first no-gutters col-12 col-md-5 col-lg-3 featured-stories">
+    <section class="order-md-first p-3 row col-md-5 col-lg-3 featured-stories d-md-flex flex-md-column">
       <h6 class="text-secondary">
         FEATURED STORIES
       </h6>
@@ -103,13 +103,13 @@
           </figcaption>
         </figure>
         <p>
-          The vice president made the comment in an interview with the Christian Broadcasting Network.
+          The vice president made the comment in an interview with the Christian Broadcasting Network. The vice president made the comment in an interview with the Christian Broadcasting Network.
         </p>
       </article>
       <article>
         <figure>
           <div class="position-relative">
-            <img class="w-100" src="./src/assets/images/featured/mail-ballots.jpg" alt="picture of Joe Biden">
+            <img class="w-100" src="./src/assets/images/featured/mail-ballots.jpg" alt="picture of mail">
             <span
               class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
               U.S.
@@ -122,7 +122,8 @@
           </figcaption>
         </figure>
         <p>
-          "The court should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project. </p>
+          "The court should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project. "The court should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project.
+        </p>
       </article>
       <article>
         <figure>
@@ -142,7 +143,8 @@
         <p>
           My grandfather, Dr. Ken Takeuchi, was the director of the Hiroshima Red Cross Hospital. On August 4, 1945, he
           had talked to staff and encouraged them to arrive at work earlier. At 8.15am on August 6, when the atomic bomb
-          hit, many staff were inside the hospital—his pep talk had saved lives. </p>
+          hit, many staff were inside the hospital—his pep talk had saved lives. 
+        </p>
       </article>
       <article>
         <figure>
@@ -161,7 +163,8 @@
         </figure>
         <p>
           Bolton—long an advocate of regime change in Tehran—said Trump's "maximum pressure" Iran strategy was not
-          enough. </p>
+          enough. 
+        </p>
       </article>
       <article>
         <figure>
@@ -180,7 +183,8 @@
         </figure>
         <p>
           Bodycam footage from inside Forsyth County Detention Center, showing the lead-up to John Neville's death, has
-          been released. </p>
+          been released. 
+        </p>
       </article>
     </section>
     <!-- THE DEBATE + OPINION -->
@@ -1326,8 +1330,8 @@
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="row container-fluid no-gutters">
-    <section class="p-2 bg-warning col-12 d-md-flex justify-content-between">
+  <footer class="row no-gutters">
+    <section class="p-2 bg-warning row d-md-flex justify-content-between">
       <div class="d-md-flex">
         <div>
           LOGO
@@ -1355,7 +1359,7 @@
       </div>
     </section>
     <!-- FOOTER LINKS -->
-    <section class="p-2 bg-secondary border-danger border-top col-12">
+    <section class="p-2 bg-secondary border-danger border-top row">
       TEXT HERE
     </section>
   </footer>

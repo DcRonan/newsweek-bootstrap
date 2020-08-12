@@ -54,8 +54,7 @@
 */
 
 .main-logo {
-  width: 110px;
-  height: 40px;
+  width: 120px;
 }
 
 .sub-button {
@@ -217,6 +216,14 @@ footer ul {
 */
 
 @media (min-width: 768px) {
+  .sub-button {
+    font-size: 12px;
+  }
+
+  .fa-bars {
+    font-size: 27px;
+  }
+
   .cats-small figcaption > a,
   .my-turn figcaption > a,
   .culture figcaption > a {
@@ -242,5 +249,14 @@ footer ul {
   .vs {
     left: 47%;
     top: 47%;
+  }
+
+  .main-logo {
+    width: 400px;
+  }
+
+  .sub-button,
+  .login-text {
+    font-size: 18px;
   }
 }

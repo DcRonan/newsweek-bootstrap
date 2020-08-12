@@ -64,7 +64,6 @@
 
 .sub-button {
   font-size: 10px;
-  border: none;
 }
 
 /*
@@ -148,18 +147,6 @@ article p {
   width: 90px;
   max-height: 90px;
 }
-
-/*
-===================
-
-    SUBSCRIBE
-
-===================
-*/
-
-/* .sub-box {
-  height: 400px;  
-} */
 
 /*
 ==========================

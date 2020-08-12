@@ -150,6 +150,18 @@ article p {
 }
 
 /*
+===================
+
+    SUBSCRIBE
+
+===================
+*/
+
+/* .sub-box {
+  height: 400px;  
+} */
+
+/*
 ==========================
       BORDERS (CSS)
 ==========================
@@ -158,14 +170,16 @@ article p {
 .debate,
 .featured-stories,
 .more-stories,
-.in-the-magazine {
+.in-the-magazine,
+.subscribe {
   border-top: 20px solid var(--border-gray);
 }
 
 .debate,
 .opinion,
 .more-stories,
-.in-the-magazine {
+.in-the-magazine,
+.bottom-cat {
   border-bottom: 20px solid var(--border-gray);
 }
 

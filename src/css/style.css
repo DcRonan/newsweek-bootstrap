@@ -79,6 +79,10 @@
   width: 90px;
 }
 
+.tech-box {
+  width: 150px;
+}
+
 .culture-box {
   width: 75px;
 }
@@ -89,7 +93,8 @@ article p {
 
 .featured-stories figcaption a:hover,
 .debate-opinion h6 > a:hover,
-.in-the-magazine h6 > a:hover {
+.in-the-magazine h6 > a:hover,
+.editors-pick figcaption a:hover {
   border-bottom: 1px solid red;
 }
 
@@ -138,13 +143,15 @@ article p {
 
 .debate,
 .featured-stories,
-.more-stories {
+.more-stories,
+.in-the-magazine {
   border-top: 20px solid var(--border-gray);
 }
 
 .debate,
 .opinion,
-.more-stories {
+.more-stories,
+.in-the-magazine {
   border-bottom: 20px solid var(--border-gray);
 }
 
@@ -156,7 +163,9 @@ article p {
 .top-debate,
 .opinion article,
 .top-story,
-.more-stories article {
+.more-stories article,
+.editors-title,
+.editors-pick {
   border-bottom: solid 1px var(--gray-line);
 }
 

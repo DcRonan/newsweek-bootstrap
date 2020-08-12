@@ -94,7 +94,8 @@ article p {
 .featured-stories figcaption a:hover,
 .debate-opinion h6 > a:hover,
 .in-the-magazine h6 > a:hover,
-.editors-pick figcaption a:hover {
+.editors-pick figcaption a:hover,
+.cats figcaption a:hover {
   border-bottom: 1px solid red;
 }
 
@@ -133,6 +134,19 @@ article p {
 
 .sign-up {
   width: 300px;
+}
+
+/*
+===================
+
+    CATEGORIES
+
+===================
+*/
+
+.cats-small img {
+  width: 90px;
+  max-height: 90px;
 }
 
 /*
@@ -184,6 +198,14 @@ article p {
 
 =======================================
 */
+
+@media (min-width: 768px) {
+  .cats-small figcaption > a,
+  .my-turn figcaption > a,
+  .culture figcaption > a {
+    font-size: 12px;
+  }
+}
 
 @media (min-width: 992px) {
   .vs {

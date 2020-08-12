@@ -2,7 +2,12 @@
 TODO:
 [ ] Add border none on debate border when hits breakpoint
 [ ] Change 1px gray boders to bootstrap silver borders
-[ ] 
+[ ] make nav-bar fixed
+[ ] Add fonts
+[ ] Add two nav bars for large screens
+[ ] add date in nav for large screen
+[ ] change size of logo in large screen
+[ ] Add borders on footer links on large screens
 
 
 -= Running tests commands =-

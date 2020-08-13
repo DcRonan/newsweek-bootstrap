@@ -12,6 +12,25 @@
   -moz-box-sizing: border-box;
 }
 
+/*
+================
+     FONTS
+================
+*/
+
+header,
+main {
+  font-family: roboto-condensed, sans-serif;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+================
+*/
+
 .container {
   max-width: 1440px; /* Increased size of container class */
 }
@@ -74,6 +93,10 @@
   font-size: 10px;
 }
 
+nav {
+  font-size: 18px;
+}
+
 /*
 =======================================
      TOP STORY + FEATURED STORIES
@@ -102,8 +125,7 @@ article p {
 ================
 */
 
-.mid-nav a:hover,
-.bottom-nav a:hover {
+.mid-nav a:hover {
   color: var(--hover-red);
 }
 
@@ -272,4 +294,15 @@ footer ul {
   .login-text {
     font-size: 18px;
   }
+
+  main {
+    font-size: large;
+  }
+  
+  .my-turn figcaption > a,
+  .culture figcaption > a,
+  .cats-small figcaption > a {
+    font-size: 16px;
+  }
+  
 }

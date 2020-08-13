@@ -11,22 +11,25 @@
 | [License](#license) | 
 
 ## Description
-> Write about the project...
+> The main purpose of this project was to learn how to use Bootstrap. In doing so I created a replica of Newsweek 
+![home webpage](https://www.newsweek.com/). For a link to my page, please scroll down to the live demo section.
 
-![screenshot](./src/assets/images/screenshot.svg)
+![screenshot](./src/assets/images/main-sc.png)
 
-Additional description about the project and its features...
+I used Bootstrap for aligning all of the content, font styles, GRID, Flex-Box plus more. 
 
 ## Built With
 ```
 - HTML5 
 - CSS3
+- BOOTSTRAP 4.5
 - VS Code
 - Font Awesome Icons
 ```
 
 ![img](./src/assets/svg/html-5.svg) ![img](./src/assets/svg/css-3.svg)
-![img](./src/assets/svg/v-s-code.svg) ![img](./src/assets/svg/fontawesome.svg)
+![img](./src/assets/svg/bootstrap.svg) ![img](./src/assets/svg/v-s-code.svg) 
+![img](./src/assets/svg/fontawesome.svg)
 
 <!--
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=000)
@@ -36,13 +39,13 @@ Additional description about the project and its features...
 
 ## Live Demo
 
-#### Click on image below..
+#### Click on the button below..
 
-<a href="#" target="_blank">
+<a href="https://newsweek-clone.vercel.app/" target="_blank">
     <img src="src/assets/svg/monitor.svg">
 </a>
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+[![Live Demo](https://vercel.com/button)](https://newsweek-clone.vercel.app/)
 
 ## Run Tests
 
@@ -69,12 +72,6 @@ npm test
 [![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
 [![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
 
-### 👨‍💻 - 👩‍💻 Coding Partner
-
-[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/DcRonan) <br>
-[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/danronan10/) <br>
-[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
-[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
 
 ### 🤝 Contributing
 

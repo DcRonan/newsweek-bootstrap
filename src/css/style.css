@@ -97,11 +97,24 @@ nav {
   font-size: 18px;
 }
 
+.top-nav {
+  max-width: 1440px;
+  z-index: 8000;
+}
+
+.mid-nav {
+  margin-top: 85px;
+}
+
 /*
 =======================================
      TOP STORY + FEATURED STORIES
 =======================================
 */
+
+main {
+  margin-top: 55px;
+}
 
 .cat-box {
   width: 90px;
@@ -297,6 +310,7 @@ footer ul {
 
   main {
     font-size: large;
+    margin-top: 0;
   }
 
   .my-turn figcaption > a,

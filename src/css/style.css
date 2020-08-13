@@ -12,6 +12,10 @@
   -moz-box-sizing: border-box;
 }
 
+.container {
+  max-width: 1440px; /* Increased size of container class */
+}
+
 /*
 ================
      COLORS
@@ -83,11 +87,19 @@ article p {
   font-size: smaller;
 }
 
+/*
+================
+     HOVER
+================
+*/
+
 .featured-stories figcaption a:hover,
 .debate-opinion h6 > a:hover,
 .in-the-magazine h6 > a:hover,
 .editors-pick figcaption a:hover,
-.cats figcaption a:hover {
+.cats figcaption a:hover,
+.top-story figcaption a:hover,
+.more-stories h6 a:hover {
   border-bottom: 1px solid red;
 }
 
@@ -187,20 +199,6 @@ footer ul {
   border-bottom: 20px solid var(--border-gray);
 }
 
-.bottom-debate,
-.more-stories-top {
-  border-top: solid 1px var(--gray-line);
-}
-
-.top-debate,
-.opinion article,
-.top-story,
-.more-stories article,
-.editors-title,
-.editors-pick {
-  border-bottom: solid 1px var(--gray-line);
-}
-
 .top-debate {
   border-top: solid 4px var(--gray-line);
 }
@@ -236,7 +234,8 @@ footer ul {
   .opinion,
   .debate,
   .more-stories,
-  .featured-stories {
+  .featured-stories,
+  .top-story {
     border: none;
   }
 
@@ -248,7 +247,7 @@ footer ul {
 @media (min-width: 992px) {
   .vs {
     left: 47%;
-    top: 47%;
+    top: 45%;
   }
 
   .main-logo {

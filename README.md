@@ -12,7 +12,7 @@
 
 ## Description
 > The main purpose of this project was to learn how to use Bootstrap. In doing so I created a replica of Newsweek 
-![home webpage](https://www.newsweek.com/). For a link to my page, please scroll down to the live demo section.
+[home webpage](https://www.newsweek.com/). For a link to my page, please scroll down to the live demo section.
 
 ![screenshot](./src/assets/images/main-sc.png)
 

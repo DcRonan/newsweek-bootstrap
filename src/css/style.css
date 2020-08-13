@@ -68,7 +68,7 @@ footer {
 }
 
 .bg-sign-up {
-    background-color: #f4f5f6;
+  background-color: #f4f5f6;
 }
 
 .text-red {
@@ -120,26 +120,6 @@ article p {
 }
 
 /*
-================
-     HOVER
-================
-*/
-
-.mid-nav a:hover {
-  color: var(--hover-red);
-}
-
-.featured-stories figcaption a:hover,
-.debate-opinion h6 > a:hover,
-.in-the-magazine h6 > a:hover,
-.editors-pick figcaption a:hover,
-.cats figcaption a:hover,
-.top-story figcaption a:hover,
-.more-stories h6 a:hover {
-  border-bottom: 1px solid red;
-}
-
-/*
 =======================================
         THE DEBATE + OPINION
 =======================================
@@ -161,6 +141,26 @@ article p {
   left: 46%;
   top: 46%;
   z-index: 1;
+}
+
+/*
+================
+     HOVER
+================
+*/
+
+.mid-nav a:hover {
+  color: var(--hover-red);
+}
+
+.featured-stories figcaption a:hover,
+.debate-opinion h6 > a:hover,
+.in-the-magazine h6 > a:hover,
+.editors-pick figcaption a:hover,
+.cats figcaption a:hover,
+.top-story figcaption a:hover,
+.more-stories h6 a:hover {
+  border-bottom: 1px solid red;
 }
 
 /*
@@ -258,6 +258,10 @@ footer ul {
     font-size: 27px;
   }
 
+  footer li > a {
+    border-right: solid 1px var(--gray-line);
+  }
+
   .cats-small figcaption > a,
   .my-turn figcaption > a,
   .culture figcaption > a {
@@ -274,16 +278,12 @@ footer ul {
   .top-story {
     border: none;
   }
-
-  footer li > a {
-  border-right: solid 1px var(--gray-line);  
-  }
 }
 
 @media (min-width: 992px) {
   .vs {
     left: 47%;
-    top: 45%;
+    top: 48%;
   }
 
   .main-logo {
@@ -298,11 +298,10 @@ footer ul {
   main {
     font-size: large;
   }
-  
+
   .my-turn figcaption > a,
   .culture figcaption > a,
   .cats-small figcaption > a {
     font-size: 16px;
   }
-  
 }

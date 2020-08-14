@@ -1,0 +1,345 @@
+/*
+================
+     RESET
+================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/*
+================
+     FONTS
+================
+*/
+
+header,
+main {
+  font-family: roboto-condensed, sans-serif;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+================
+*/
+
+.container {
+  max-width: 1440px; /* Increased size of container class */
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+/*
+================
+     COLORS
+================
+*/
+
+:root {
+  --border-gray: #f4f5f7;
+  --gray-line: #d9d9d9;
+  --hover-red: #f72210;
+}
+
+.bg-red {
+  background-color: #f72210;
+}
+
+.bg-yellow {
+  background-color: #ffe400;
+}
+
+.cat-box-color {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bg-culture-box {
+  background-color: #c2d4d7;
+}
+
+.bg-sign-up {
+  background-color: #f4f5f6;
+}
+
+.text-red {
+  color: #f72210;
+}
+
+.text-black {
+  color: #000;
+}
+
+/*
+================
+     HEADER
+================
+*/
+
+.main-logo {
+  width: 120px;
+}
+
+.sub-button {
+  font-size: 10px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.top-nav {
+  max-width: 1440px;
+  z-index: 8000;
+}
+
+.mid-nav {
+  margin-top: 85px;
+}
+
+/*
+=======================================
+     TOP STORY + FEATURED STORIES
+=======================================
+*/
+
+main {
+  margin-top: 55px;
+}
+
+.cat-box {
+  width: 90px;
+}
+
+.tech-box {
+  width: 150px;
+}
+
+.culture-box {
+  width: 75px;
+}
+
+article p {
+  font-size: smaller;
+}
+
+.pos-sticky {
+  top: 5rem;
+}
+
+/*
+=======================================
+        THE DEBATE + OPINION
+=======================================
+*/
+
+.debate-opinion,
+.debate-opinion a,
+.my-turn h6,
+.culture h6 {
+  font-size: smaller;
+}
+
+.debate img,
+.opinion img {
+  width: 60px;
+}
+
+.vs {
+  left: 46%;
+  top: 46%;
+  z-index: 1;
+}
+
+.debate-opinion {
+  top: 6rem;    /* <------ For the position sticky */
+}
+
+/*
+================
+     HOVER
+================
+*/
+
+.mid-nav a:hover {
+  color: var(--hover-red);
+}
+
+.featured-stories figcaption a:hover,
+.debate-opinion h6 > a:hover,
+.in-the-magazine h6 > a:hover,
+.editors-pick figcaption a:hover,
+.cats figcaption a:hover,
+.top-story figcaption a:hover,
+.more-stories h6 a:hover {
+  border-bottom: 1px solid red;
+}
+
+/*
+===================
+      SIGN UP
+===================
+*/
+
+.sign-up {
+  width: 300px;
+}
+
+/*
+===================
+    CATEGORIES
+===================
+*/
+
+.cats-small img {
+  width: 90px;
+  max-height: 90px;
+}
+
+/*
+===================
+    NEWSLETTER
+===================
+*/
+
+.newsletter-img {
+  height: 223px;
+}
+
+/*
+===================
+      FOOTER
+===================
+*/
+
+.footer-logo {
+  width: 250px;
+}
+
+.social-icons {
+  font-size: 30px;
+}
+
+footer ul {
+  line-height: 1.9rem;
+}
+
+/*
+=======================
+     BORDERS (CSS)
+=======================
+*/
+
+.debate,
+.featured-stories,
+.more-stories,
+.in-the-magazine,
+.subscribe,
+.newsletter {
+  border-top: 20px solid var(--border-gray);
+}
+
+.debate,
+.opinion,
+.more-stories,
+.in-the-magazine,
+.newsletter {
+  border-bottom: 20px solid var(--border-gray);
+}
+
+.top-debate {
+  border-top: solid 4px var(--gray-line);
+}
+
+.bottom-debate {
+  border-bottom: solid 4px var(--gray-line);
+}
+
+/*
+==============================
+        MEDIA QUERIES
+==============================
+*/
+
+@media (min-width: 768px) {
+  .sub-button {
+    font-size: 12px;
+  }
+
+  .fa-bars {
+    font-size: 27px;
+  }
+
+  footer li > a {
+    border-right: solid 1px var(--gray-line);
+  }
+
+  .cats-small figcaption > a,
+  .my-turn figcaption > a,
+  .culture figcaption > a {
+    font-size: 12px;
+  }
+
+  .newsletter,
+  .subscribe,
+  .in-the-magazine,
+  .opinion,
+  .debate,
+  .more-stories,
+  .featured-stories,
+  .top-story {
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .vs {
+    left: 47%;
+    top: 48%;
+  }
+
+  .main-logo {
+    width: 400px;
+  }
+
+  .sub-button,
+  .login-text {
+    font-size: 18px;
+  }
+
+  main {
+    font-size: large;
+    margin-top: 0;
+  }
+
+  .pos-sticky {
+    top: 7rem;
+  }
+
+  .in-the-magazine h6 > a {
+    font-size: 20px;
+  }
+
+  .news-img {
+    width: 400px;
+  }
+
+  .newsletter-img {
+    height: 295px;
+  }
+
+  .my-turn figcaption > a,
+  .culture figcaption > a,
+  .cats-small figcaption > a {
+    font-size: 16px;
+  }
+}

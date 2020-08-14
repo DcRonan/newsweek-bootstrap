@@ -1,21 +1,1886 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> ** Title here.. ** </title>
-    <meta name="description" content="A static website">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
-    <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
-    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/css/style.css">
-  </head>
-  <body>
 
-     <h1>
-       Project Name
-     </h1>
-     
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Newsweek</title>
+  <meta name="description" content="A static website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous" />
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
+  <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/867f1dd431.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/qhd3exy.css">
+  <link rel="shortcut icon" href="./src/assets/images/n-logo.png" type="image/x-icon">
+</head>
+
+<body class="container">
+  <!-- HEADER -->
+  <header class="row text-white d-flex flex-column no-gutters">
+    <!-- TOP NAV -->
+    <nav
+      class="bg-red row d-flex justify-content-between align-items-center pt-lg-3 pb-lg-3 position-fixed top-nav w-100">
+      <div class="d-none flex-column d-lg-flex pl-2">
+        <a href="#" class="font-weight-bold text-decoration-none text-white">
+          26° London, GB
+        </a>
+        <span class="pl-1">
+          Wed, Aug 12, 2020
+        </span>
+      </div>
+      <div>
+        <a class="pl-2" href="#">
+          <img class="main-logo" src="./src/assets/images/newsweek.svg" alt="newsweek main logo">
+        </a>
+      </div>
+      <ul class="d-flex align-items-center pt-3 pr-3 list-unstyled mb-lg-n2">
+        <li>
+          <a href="#" class="text-decoration-none text-white d-none d-md-block font-weight-bold login-text">
+            LOGIN
+          </a>
+        </li>
+        <li class="d-md-none">
+          <a href="#">
+            <i class="fas fa-user text-white-50"></i>
+          </a>
+        </li>
+        <li class="ml-3 mr-3">
+          <button class="bg-yellow sub-button rounded-pill btn text-dark font-weight-bold p-md-1" type="button">
+            SUBSCRIBE >
+          </button>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-bars text-white-50 d-lg-none"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- MIDDLE NAV -->
+    <nav class="row bg-white font-weight-bold d-none d-lg-flex border-bottom border-silver mid-nav">
+      <ul class="d-lg-flex justify-content-evenly w-100 align-items-center pt-3 list-unstyled">
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            U.S.
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            World
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Business
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Tech & Science
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Culture
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Newsgeek
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Sports
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Health
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            The Debate
+          </a>
+        </li>
+        <li class="border-right border-silver pr-2">
+          <a href="#" class="text-decoration-none text-black">
+            Vantage
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-black">
+            Weather
+          </a>
+        </li>
+        <li>
+          <input class="w-50 text-black font-weight-light border-0" type="search" name="search-bar"
+            placeholder="Search">
+          <i class="fas fa-search text-secondary ml-n4"></i>
+        </li>
+      </ul>
+    </nav>
+    <!-- BOTTOM-NAV -->
+    <nav class="bg-white row d-none d-lg-flex border-bottom border-silver font-weight-bold btm-nav">
+      <ul class="d-lg-flex align-items-center pt-3 pl-3 list-unstyled">
+        <li class="text-black mr-3">
+          TRENDING
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-secondary mr-3">
+            DONALD TRUMP
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-secondary mr-3">
+            JOE BIDEN
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-secondary mr-3">
+            CHINA
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-secondary mr-3">
+            CORONAVIRUS
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none text-secondary mr-3">
+            2020 ELECTION
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- MAIN -->
+  <main class="row no-gutters">
+    <!-- TOP STORY -->
+    <section class="row p-3 d-md-none mt-4 top-story border-bottom border-silver">
+      <h6 class="text-secondary">
+        TOP STORY
+      </h6>
+      <article>
+        <figure>
+          <div class="position-relative mb-2">
+            <img class="w-100" src="./src/assets/images/joe-biden.jpg" alt="picture of Joe Biden">
+            <span
+              class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+              NEWS
+            </span>
+          </div>
+          <figcaption>
+            <a href="#" class="text-dark font-weight-bold text-decoration-none">
+              Biden Calls for Increased Funding for Police to Fuel Reform Efforts
+            </a>
+          </figcaption>
+        </figure>
+        <p>
+          Former Vice President Joe Biden denied President Donald Trump's unfounded claim that he supports defunding the
+          police on Wednesday and instead called for additional police funding to boost reform efforts and support for
+          police officers that have to deal with "god awful problems."
+        </p>
+      </article>
+    </section>
+    <!-- FEATURED STORIES -->
+    <section class="order-md-first p-3 row col-md-5 col-lg-3 d-md-flex flex-md-column featured-stories">
+      <section class="position-sticky pos-sticky">
+        <h6 class="text-secondary">
+          FEATURED STORIES
+        </h6>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/featured/mike-pence.jpg" alt="picture of Joe Biden">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                POLITICS
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                Mike Pence Calls Chief Justice Roberts a 'Disappointment' to Conservatives
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            The vice president made the comment in an interview with the Christian Broadcasting Network. The vice
+            president made the comment in an interview with the Christian Broadcasting Network.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/featured/mail-ballots.jpg" alt="picture of mail">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                U.S.
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                Tennessee Supreme Court Allows Mail-In Ballots—Only for Vulnerable Voters
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            "The court should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project. "The court
+            should have gone further," said Dale Ho, director of the ACLU's Voting Rights Project.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/featured/atomic-bomb.jpg" alt="picture of Joe Biden">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                MY TURN
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                'My Grandfather and Mother Survived The Hiroshima Atomic Bomb'
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            My grandfather, Dr. Ken Takeuchi, was the director of the Hiroshima Red Cross Hospital. On August 4, 1945,
+            he
+            had talked to staff and encouraged them to arrive at work earlier. At 8.15am on August 6, when the atomic
+            bomb
+            hit, many staff were inside the hospital—his pep talk had saved lives.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/featured/donald-trump.jpg" alt="picture of Joe Biden">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                WORLD
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                Bolton Says U.S. Should Overthrow Iran's Ayatollahs, Give Power to People
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            Bolton—long an advocate of regime change in Tehran—said Trump's "maximum pressure" Iran strategy was not
+            enough.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/featured/jail-cell.jpg" alt="picture of Joe Biden">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                NEWS
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                Inmate Cried 'I Can't Breathe' As Officers Pinned Him Down for 12 Minutes
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            Bodycam footage from inside Forsyth County Detention Center, showing the lead-up to John Neville's death,
+            has
+            been released.
+          </p>
+        </article>
+      </section>
+    </section>
+    <!-- THE DEBATE + OPINION -->
+    <section class="container-fluid col-lg-3 mb-4">
+      <section class="debate-opinion position-sticky">
+        <!-- THE DEBATE -->
+        <section class="mb-4 row mt-2 bg-white debate position-relative p-3">
+          <h6 class="text-secondary col-12">
+            THE DEBATE
+          </h6>
+          <article class="d-flex top-debate col-12 pt-3 pb-3 mb-1 align-items-center border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/the-debate/kelly-shackelford.png" alt="picture of kelly-shackelford">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">
+                  Religious Freedom Is Under Attack Like Never Before
+                </a>
+              </h6>
+              <span>
+                BY <span class="font-weight-bold"> Kelly Shackelford </span>
+              </span>
+            </div>
+          </article>
+          <div class="vs position-absolute rounded-circle bg-dark text-light p-2">
+            VS
+          </div>
+          <article
+            class="col-12 d-flex bottom-debate pt-3 pb-3 mt-1 justify-content-between align-items-center border-top border-silver">
+            <div class="mr-3">
+              <h6>
+                <a href="#" class="font-weight-bold text-decoration-none text-dark">
+                  Preserve Our Traditions of Religious Freedom and Church-State Separation
+                </a>
+              </h6>
+              <span>
+                BY <span class="font-weight-bold"> MELISSA ROGERS </span>
+              </span>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/the-debate/melissa-rogers.png" alt="picture of melissa-rogers">
+              </a>
+            </div>
+          </article>
+        </section>
+        <!-- THE OPINION -->
+        <section class="row p-3 opinion">
+          <h6 class="text-secondary pl-3">
+            OPINION
+          </h6>
+          <article class="col-12 d-flex pt-3 pb-3 border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/richard-painter.png" alt="picture of richard painter">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  How Trump's Philosophy of Law 'Avoision' Is Remaking the Political Right
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY RICHARD PAINTER
+              </span>
+            </div>
+          </article>
+          <article class="col-12 d-flex pt-3 pb-3 border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/paula-guillen.png" alt="picture of paula guillen">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  It's Time to Stop the Trump Administration's Global War on Women
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY PAULA AVILA-GUILLEN
+              </span>
+            </div>
+          </article>
+          <article class="col-12 d-flex pt-3 pb-3 border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/jason-rantz.png" alt="picture of jason rantz">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  No, Crime Isn't Going Down
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY JASON RANTZ
+              </span>
+            </div>
+          </article>
+          <article class="col-12 d-flex pt-3 pb-3 border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/michael-sean.png" alt="picture of michael sean">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  Cities Need Investment—Not a Theatrical Federal Policing 'Surge'
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY MICHAEL-SEAN SPENCE
+              </span>
+            </div>
+          </article>
+          <article class="col-12 d-flex pt-3 pb-3 border-bottom border-silver">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/shoshana-bryen.png" alt="picture of shoshana bryen">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  Saving Lebanon
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY SHOSHANA BRYEN
+              </span>
+            </div>
+          </article>
+          <article class="d-flex pt-3 pb-3 pl-3">
+            <div>
+              <a href="#">
+                <img src="./src/assets/images/opinion/robert-reich.png" alt="picture of robert reich">
+              </a>
+            </div>
+            <div class="ml-3">
+              <h6>
+                <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                  Trump Is Lying About the COVID Economy. Here's the Painful Truth
+                </a>
+              </h6>
+              <span class="text-secondary font-weight-bold">
+                BY ROBERT REICH
+              </span>
+            </div>
+          </article>
+        </section>
+        <section class="row d-none d-lg-block flex-column">
+          <div class="sign-up m-auto bg-sign-up shadow-sm border border-silver p-3">
+            <div class="d-flex justify-content-between p-2">
+              <div class="pt-2">
+                <img src="./src/assets/images/n-logo.png" alt="newsweek n logo">
+              </div>
+              <div class="ml-2 font-weight-bold">
+                START YOUR DAY WITH OUR TOP 5 ARTICLES
+              </div>
+            </div>
+            <form action="#">
+              <input class="bg-white w-100 mb-2 border-0" type="email" placeholder="Email address" />
+              <button class="w-100 btn text-white bg-red" type="button">
+                FREE SIGN UP >
+              </button>
+            </form>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-- MORE STORIES + MY TURN + CULTURE & TRAVEL -->
+    <section class="row col-12 col-md-7 pl-md-3 col-lg-6 order-md-first no-gutters">
+      <!-- TOP STORY -->
+      <section class="row p-3 d-none d-md-block top-story">
+        <h6 class="text-secondary">
+          TOP STORY
+        </h6>
+        <article>
+          <figure>
+            <div class="position-relative mb-2">
+              <img class="w-100" src="./src/assets/images/joe-biden.jpg" alt="picture of Joe Biden">
+              <span
+                class="text-red position-absolute fixed-bottom p-1 cat-box-color cat-box text-center font-weight-bold">
+                NEWS
+              </span>
+            </div>
+            <figcaption>
+              <a href="#" class="text-dark font-weight-bold text-decoration-none">
+                Biden Calls for Increased Funding for Police to Fuel Reform Efforts
+              </a>
+            </figcaption>
+          </figure>
+          <p>
+            Former Vice President Joe Biden denied President Donald Trump's unfounded claim that he supports defunding
+            the
+            police on Wednesday and instead called for additional police funding to boost reform efforts and support for
+            police officers that have to deal with "god awful problems."
+          </p>
+        </article>
+      </section>
+      <!-- MORE STORIES -->
+      <section class="row order-md-last more-stories d-lg-flex flex-lg-column p-3">
+        <h6 class="text-secondary col-12">
+          MORE STORIES
+        </h6>
+        <article class="d-flex pt-3 pb-2 border-top border-silver border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/barbara-ferrer.jpg" alt="picture of barbara-ferrer">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Biden Lead Over Trump Increases With Just 90 Days Until Election: Poll
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The Democratic presidential candidate has regularly held a lead over President Donald Trump in recent
+              weeks.
+            </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/packages.jpg" alt="picture of packages">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Can Lebanon Survive? Massive Beirut Explosion Follows 'Crisis'
+              </a>
+            </h6>
+            <p class="text-secondary">
+              "We have nothing here, and it keeps getting worse by the day. I have wasted my youth," Mohammad Hijazi
+              told Newsweek. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/uk-economy.jpg" alt="picture of london">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                U.K. Economy Set for Record Slump
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The U.K. economy is set for its worst performance in 99 years with a predicted drop of 9.5 percent this
+              year. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/meghan-markle.jpg" alt="picture of Meghan Markle">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Meghan Markle 'Damaging' Her Case Against Newspaper With PR, Experts Claim
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The Duchess of Sussex should stop media briefings or she risks damaging her case against a U.K. tabloid
+              newspaper, legal experts tell Newsweek. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/china-south.jpg" alt="picture of a fighter jet">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Why ICE Tried to Censor Netflix Doc 'Immigration Nation'
+              </a>
+            </h6>
+            <p class="text-secondary">
+              "Immigration Nation" on Netflix contains a no-holds-barred look at the work of Immigration and Customs
+              Enforcement, who reportedly took exception with some scenes in the documentary. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/trump-obama.jpg" alt="picture of Trump & Obama">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Obama Is Trashing Trump, Reigniting an Old Feud. Will it Backfire on Biden?
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The former president has in the past been reserved in his comments about President Donald Trump, despite
+              harsh criticism thrown his way. In the run-up to November, however, Barack Obama is hitting back. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/beirut-port-lebanon.jpg" alt="picture of barbara-ferrer">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                How 2,750 Tons of Deadly Ammonium Nitrate Got Stuck in a Beirut Warehouse
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The explosive fertilizer had been stored at the Beirut port since 2013, despite multiple warnings from
+              officials it presented a grave danger to the city. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/donald-trump.jpg" alt="picture of POTUS">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Trump Says Election Results Could Take 'Years' Because of Mail-In Voting
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The president speculated that mail-in votes would potentially take "months" or "years" to be tallied after
+              filing a lawsuit against Nevada. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/netherlands-coronavirus.jpg"
+                alt="picture of a city in netherlands">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Dutch Dr. Fauci Thinks Masks Won't Work. Here's Why
+              </a>
+            </h6>
+            <p class="text-secondary">
+              The lack of mandates relating to face mask use is at odds with much of Europe. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/anthony-fauci.jpg" alt="picture of anthony fauci">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Fauci Will 'Feel Good' About Using Coronavirus Vaccine That's 50% Effective
+              </a>
+            </h6>
+            <p class="text-secondary">
+              While 70 percent or more is better, Fauci said a vaccine that's 50 or 60 percent effective brings added
+              value if it's coupled with public health measures. </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 border-bottom border-silver col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/pelosi-schumer.jpg" alt="picture of pelosi schumer">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Pelosi's Refusal to Budge on $3.4 Trillion Draws Criticism
+              </a>
+            </h6>
+            <p class="text-secondary">
+              As negotiations in Congress continue, House Speaker Nancy Pelosi refuses to settle for anything less than
+              $3.4 trillion in the next stimulus bill, but even fellow Democrat Senator Joe Manchin said, "that might be
+              a little bit more than we have an appetite for." </p>
+          </div>
+        </article>
+        <article class="d-flex pt-3 pb-2 col-12">
+          <div>
+            <a class="float-left mr-3" href="#">
+              <img src="./src/assets/images/more-stories/john-thune.jpg" alt="picture of john thune">
+            </a>
+            <h6>
+              <a href="#" class="text-dark text-decoration-none font-weight-bold">
+                Trump Stump Speech at White House May Be Legal—But GOP Doesn't Like It
+              </a>
+            </h6>
+            <p class="text-secondary">
+              "Well, I don't—is that even legal?" Senate Majority Whip John Thune (R-S.D.) said to reporters Wednesday.
+          </div>
+        </article>
+      </section>
+      <!-- MY TURN -->
+      <section class="row d-md-flex mt-3 my-turn justify-content-center justify-content-md-between">
+        <div class="flex-column">
+          <h6 class="text-secondary pb-md-1 font-weight-bold pl-3">
+            MY TURN
+          </h6>
+          <div class="d-md-flex">
+            <article class="col-md-4">
+              <figure>
+                <div class="mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/my-turn/dog-trainer.jpg"
+                    alt="picture of a dog trainer and dogs">
+                </div>
+                <figcaption>
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    'I'm a Celebrity Dog Trainer in Hollywood.'
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="col-md-4">
+              <figure>
+                <div class="mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/my-turn/abortion-activism.jpg"
+                    alt="picture of a woman">
+                </div>
+                <figcaption class="text-secondary font-weight-bold">
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    'I Had an Abortion 15 Years Ago Today—It's Still the Best Choice I've Made'
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="col-md-4">
+              <figure>
+                <div class="mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/my-turn/walking-prosthetics.png"
+                    alt="picture of a boy with crutches">
+                </div>
+                <figcaption>
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    'My Five-Year-Old Raised $1.6M Walking 6 Miles Using Prosthetic Legs'
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CULTURE & TRAVEL -->
+      <section class="row d-md-flex mt-2 justify-content-center culture justify-content-md-between">
+        <div class="flex-column">
+          <h6 class="text-secondary font-weight-bold pl-3">
+            CULTURE & TRAVEL
+          </h6>
+          <div class="d-md-flex">
+            <article class="col-md-4">
+              <figure>
+                <div class="position-relative mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/culture&travel/melting-ice.jpg"
+                    alt="picture of the arctic">
+                  <span class="position-absolute fixed-bottom text-center bg-culture-box culture-box font-weight-bold">
+                    ARCTIC
+                  </span>
+                </div>
+                <figcaption>
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    Nat Geo's 'The Last Ice' Doc: What's Really at Stake With Global Warming
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="col-md-4">
+              <figure>
+                <div class="position-relative mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/culture&travel/plane-seats.jpg"
+                    alt="picture of plane passengers">
+                  <span class="position-absolute fixed-bottom text-center bg-culture-box culture-box font-weight-bold">
+                    AMTRAK
+                  </span>
+                </div>
+                <figcaption>
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    'What It's Like to Travel Across the Country by Amtrak Right Now
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="col-md-4">
+              <figure>
+                <div class="position-relative mb-2">
+                  <img class="w-100 img-fluid" src="./src/assets/images/culture&travel/hazmat-suit.jpg"
+                    alt="picture of guys in hazmat suits">
+                  <span class="position-absolute fixed-bottom text-center bg-culture-box culture-box font-weight-bold">
+                    TRAVEL
+                  </span>
+                </div>
+                <figcaption>
+                  <a href="#" class="text-secondary font-weight-bold text-decoration-none">
+                    How Safe is it to Fly? 67 Percent of Americans Are Uncomfortable Flying
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- FREE SIGN UP -->
+    <section class="row d-flex flex-column d-lg-none">
+      <div class="sign-up m-auto bg-sign-up shadow-sm border border-silver p-3">
+        <div class="d-flex justify-content-between p-2">
+          <div class="pt-2">
+            <img src="./src/assets/images/n-logo.png" alt="newsweek n logo">
+          </div>
+          <div class="ml-2 font-weight-bold">
+            START YOUR DAY WITH OUR TOP 5 ARTICLES
+          </div>
+        </div>
+        <form action="#">
+          <input class="bg-white w-100 mb-2" type="email" placeholder="Email address" />
+          <button class="w-100 btn text-white bg-red" type="button">
+            FREE SIGN UP >
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- IN THE MAGAZINE -->
+    <section class="row mt-4 in-the-magazine">
+      <h5 class="m-auto mt-3 col-12 text-center pb-4 pt-3">
+        <img class="pb-1" src="./src/assets/images/n-logo.png" alt="newsweek small logo">
+        <span class="font-weight-bold">
+          IN THE MAGAZINE
+        </span>
+      </h5>
+      <article class="position-relative col-md-3 mb-3">
+        <figure class="position-relative">
+          <a href="#">
+            <img class="w-100" src="./src/assets/images/in-the-magazine/cover-august-trump.jpg"
+              alt="picture of newsweek august magazine cover">
+          </a>
+          <figcaption class="position-absolute fixed-bottom pl-1 font-weight-bold">
+            <a href="#" class="text-decoration-none text-red">
+              AUGUST 14 ISSUE
+            </a>
+          </figcaption>
+        </figure>
+        <button type="button" class="bg-sign-up w-100 font-weight-bold">
+          SEE ALL FEATURES >
+        </button>
+      </article>
+      <article class="col-md-3 mb-3 pt-md-4">
+        <figure>
+          <div class="mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/fe-addiction-banner.jpg"
+              alt="picture of a magazine cover">
+            <img src="./src/assets/images/in-the-magazine/i-t-m-2.png" alt="august cover"
+              class="w-100 d-none d-md-block">
+          </div>
+          <figcaption>
+            <span class="p-1 bg-red mr-2 text-white">
+              COVER
+            </span>
+            <span>
+              <a href="#" class="text-red text-decoration-none">
+                HEALTH
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        <h6>
+          <a href="#" class="text-decoration-none text-dark font-weight-bold">
+            How the Pandemic Is Making the Opioid Crisis Worse
+          </a>
+        </h6>
+      </article>
+      <article class="col-md-3 mb-3 pt-md-4">
+        <figure>
+          <div class="mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/per-going-back.jpg"
+              alt="picture of people going back to work">
+            <img src="./src/assets/images/in-the-magazine/i-t-m-1.png" alt="illustration of office workers"
+              class="w-100 d-none d-md-block">
+          </div>
+          <figcaption>
+            <span class="p-1 bg-red mr-2 text-white">
+              FEATURES
+            </span>
+            <span>
+              <a href="#" class="text-red text-decoration-none">
+                POLITICS
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        <h6>
+          <a href="#" class="text-decoration-none text-dark font-weight-bold ml-md-2 mr-md-2">
+            What to Do If Work Calls You Back to the Office and You're Not Ready to Go
+          </a>
+        </h6>
+      </article>
+      <article class="col-md-3 mb-3 pt-md-4">
+        <figure>
+          <div class="mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/congressman-john-lewis.jpg"
+              alt="picture of John Lewis">
+            <img class="w-100 d-none d-md-block" src="./src/assets/images/in-the-magazine/jl-1.png"
+              alt="picture of john lewis">
+          </div>
+          <figcaption>
+            <span class="p-1 bg-red mr-2 text-white">
+              PERISCOPE
+            </span>
+            <span>
+              <a href="#" class="text-red text-decoration-none">
+                OPINION
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        <h6>
+          <a href="#" class="text-decoration-none text-dark font-weight-bold">
+            In the Name of John Lewis, Let Us Restore the Voting Rights Act
+          </a>
+        </h6>
+      </article>
+      <article class="col-md-3 mb-3">
+        <figure>
+          <div class="mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/per-bunker-banner.jpg"
+              alt="picture of a bunker">
+            <img class="w-100 d-none d-md-block" src="./src/assets/images/in-the-magazine/bunker-2.png"
+              alt="picture of a bunker">
+          </div>
+          <figcaption>
+            <span class="p-1 bg-red mr-2 text-white">
+              PERISCOPE
+            </span>
+            <span>
+              <a href="#" class="text-red text-decoration-none">
+                CULTURE
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        <h6>
+          <a href="#" class="text-decoration-none text-dark font-weight-bold">
+            A Look Inside the Luxury Bunker Built by Doomsday Preppers for the Apocalypse
+          </a>
+        </h6>
+      </article>
+      <article class="col-md-3 mb-3 ml-md-2 mr-md-2">
+        <figure>
+          <div class="mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/spain-beach.jpg"
+              alt="picture of a beach in spain">
+            <img class="w-100 d-none d-md-block" src="./src/assets/images/in-the-magazine/beach-2.png"
+              alt="picture of a beach in spain">
+          </div>
+          <figcaption>
+            <span class="p-1 bg-red mr-2 text-white">
+              PERISCOPE
+            </span>
+            <span>
+              <a href="#" class="text-red text-decoration-none">
+                CULTURE
+              </a>
+            </span>
+          </figcaption>
+        </figure>
+        <h6>
+          <a href="#" class="text-decoration-none text-dark font-weight-bold">
+            Europe Fears Coronavirus Second Wave Amid Spikes in Spain, France, Germany
+          </a>
+        </h6>
+      </article>
+      <article class="col-md-3 mb-3">
+        <figure>
+          <div class="position-relative mb-2">
+            <img class="w-100 d-md-none" src="./src/assets/images/in-the-magazine/street-hassle.jpg"
+              alt="picture of a soldier on the streets">
+            <img class="w-100 d-none d-md-block" src="./src/assets/images/in-the-magazine/streets-2.png"
+              alt="picture of a soldier on the streets">
+            <span class="position-absolute fixed-bottom bg-red cat-box text-center text-white">
+              IN FOCUS
+            </span>
+          </div>
+          <figcaption>
+            <h6>
+              <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                STREET HASSLE
+              </a>
+            </h6>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+    <!-- EDITORS PICK -->
+    <section class="row no-gutters editors-pick pb-3 border-bottom border-silver">
+      <h5 class="text-center col-12 pb-3 pt-3 border-bottom border-silver">
+        <span>
+          <img class="pb-1" src="./src/assets/images/n-logo.png" alt="newsweek small logo">
+        </span>
+        <span class="ml-2 font-weight-bold">
+          EDITOR'S PICK
+        </span>
+      </h5>
+      <article class="col-md-6 col-lg-3 pr-md-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/berlin-germany.jpg" alt="picture of berlin">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                NEWS
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Europe Imposes New Restrictions as Countries Face 'Alarming' COVID-19 Surge
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          France, Spain, Italy, Germany, The Netherlands, Belgium and Greece have issued new safety measures following a
+          rise in cases.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pl-md-2 pr-lg-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/forrest-galante.jpg" alt="picture of sharks">
+            <span class="position-absolute fixed-bottom tech-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                TECH & SCIENCE
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Shark Not Seen for Over 100 Years Rediscovered in 'Land of the Lost'
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          "I was shocked, absolutely shocked," wildlife biologist and broadcaster Forrest Galante said upon finding the
+          shark.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pr-md-2 pl-lg-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/apple-store.jpg" alt="picture of a apple store">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                NEWS
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Tesla, Apple, Lamborghini Among Stores Looted, Vandalized in Chicago Riots
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          Mass looting and vandalism took place in downtown Chicago last night, with Nordstrom, Walgreens, Macy's,
+          Coach, Gucci, Saks Fifth Avenue, Neiman Marcus, Best Buy, Old Navy, and Louis Vuitton hit among others.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pl-md-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/ice.jpg" alt="picture of an inmate">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                U.S.
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              ICE Facility Turns Ambulance Away After Detainees Warn 'I Can't Breathe'
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          "We were worried they were going to die," immigration attorney Lisa Knox told Newsweek.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pr-md-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/eviction.jpg"
+              alt="picture of a banner saying 'eviction'">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-red text-decoration-none">
+                U.S.
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Trump's Executive Order Could See Eviction Epidemic as Renters at Risk
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          The country may be facing the "most severe housing crisis in its history" as federal, state and local
+          protections and resources expire and people continue to struggle financially, a new study has warned.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pl-md-2 pr-lg-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/covid-vaccine.jpg"
+              alt="picture of a covid vaccine">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                WORLD
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Does Anyone Really Know How Much a COVID-19 Vaccine Will Cost Governments?
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          If there is no price too high for a successful vaccine, does that change if you've already paid for 100
+          unsuccessful ones?
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pr-md-2 pl-lg-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/belarus-streets.jpg"
+              alt="picture of belarus streets">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-red text-decoration-none">
+                WORLD
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              Protester takes on police force in video as unrest breaks out in Belarus
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          The video emerged as protesters and riot police clashed in Belarus' capital Minsk and other cities in the wake
+          of Alexander Lukashenko's presidential election victory.
+        </p>
+      </article>
+      <article class="col-md-6 col-lg-3 pl-md-2">
+        <figure>
+          <div class="position-relative">
+            <img class="w-100" src="./src/assets/images/editors-pick/president-donald-trump.jpg" alt="picture of POTUS">
+            <span class="position-absolute fixed-bottom cat-box font-weight-bold text-center cat-box-color p-1">
+              <a href="#" class="text-decoration-none text-red">
+                U.S.
+              </a>
+            </span>
+          </div>
+          <figcaption class="pt-2">
+            <a href="#" class="text-decoration-none text-dark font-weight-bold">
+              When Will the $400 Unemployment Start? Trump's Executive Action Explained
+            </a>
+          </figcaption>
+        </figure>
+        <p class="font-weight-light mt-n2">
+          The funds for this wage loss assistance program will be 75 percent funded by the federal government and 25
+          percent by state government.
+        </p>
+      </article>
+    </section>
+    <!-- CATEGORIES -->
+    <section class="m-auto">
+      <!-- U.S. -->
+      <section class="d-md-flex flex-md-column cats border-bottom border-silver pb-4">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            U.S.
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/u.s./joe-biden-kamala.jpg"
+                    alt="picture of Joe Biden and Kamala">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Biden and Harris Are First Ticket in 40 Years Without Ivy League Degrees
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/u.s./ilhan-omar.jpg" alt="picture of ilhan omar">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Squad Member Ilhan Omar Wins Minnesota Primary After Contentious Race
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/u.s./susan-collins.jpg" alt="picture of susan collins">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Maine Sen. Susan Collins 8 Points Behind Democratic Challenger in New Poll
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/u.s./mike-pence.jpg" alt="picture of mike pence">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Will Kamala Harris and Mike Pence Debate Before the Presidential Election?
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/u.s./donald-trump-square.jpg" alt="picture of POTUS">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Trump Says He Was A 'Little Surprised' at Harris' VP Nod
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- WORLD -->
+      <section class="d-md-flex flex-md-column cats border-bottom border-silver pb-4">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            World
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/world/mannequins.jpg" alt="picture of mannequins">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Can the U.K. Economy Avoid a Second Great Depression?. Can the U.K. Economy Avoid
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/world/us-china-cargo-container.jpg"
+                    alt="picture of chinese cargo containers">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Forget Taiwan. The Latest U.S.-China Spat is Over Sofas and Coffee Tables
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/world/drone-attack.jpg" alt="picture of a military drone">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Iraq Says Commanders Killed in Turkey Military Attack Near Border
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/world/japan.jpg" alt="picture of an atom bomb in Japan">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Atom Bomb Survivors Warn Japan New Defense Plans May Bring Disaster
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/world/kellyanne-conway.jpg" alt="picture of kellyanne conway">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Conway Dismisses Russian COVID-19 Vaccine: 'Nowhere Near Where We Are'
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- BUSINESS -->
+      <section class="d-md-flex flex-md-column cats border-bottom border-silver pb-4">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            Business
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/business/stock-exchange.jpg"
+                    alt="picture of stock exchange office">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Stocks May Anticipate Economic Surge As S&P Nears Record High
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/business/nancy-pelosi.jpg" alt="picture of nancy pelosi">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  U.S. Dollar Strengthens on Hopes of Stimulus Deal Despite Congress Gridlock
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/business/uber-lyft-sign.jpg" alt="picture of uber lyft sign">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    After Judge Rules Uber, Lyft Drivers Are Employees, What Happens Next?
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/business/anna-peric.jpg" alt="picture of a mask-less woman">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Ohio Woman Refuses Mask in Planet Fitness, Accuses Staffer of 'Harassment'
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/business/closed-covid-19-coronavirus.jpg"
+                      alt="picture of closed sign because of covid">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Private Sector Jobs Growth Six Times Worse Than Expected in July
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- TECH & SCIENCE -->
+      <section class="d-md-flex flex-md-column cats border-bottom border-silver pb-4">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            Tech & Science
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/tech&science/space.jpg" alt="picture of space">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  The Universe Will End With a Black Dwarf Supernova, The Universe Will End.
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/tech&science/stock-photo-global.jpg"
+                    alt="picture of puzzle pieces">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  In 200 Years, Half of the Planet's Mass Could Be Made of 'Digital Bits'
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/tech&science/brick-supercapacitor.jpg"
+                      alt="picture of a brick- upercapacitor">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Bricks That Store Energy Created by Scientists That Could Power Electronics
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/tech&science/reef-shark.jpg" alt="picture of reef sharks">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Gruesome Shark Feeding Video Suggests They Prefer Fish to Human Blood
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/tech&science/meteors.jpg" alt="picture of meteors">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Where Is Perseus in the Night Sky and Which Direction to Look for Perseids?
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- CULTURE -->
+      <section class="d-md-flex flex-md-column cats border-bottom border-silver pb-4">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            Culture
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/culture/iphone-image.jpg" alt="picture of an iPhone">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Man Shares Hitler Meme & Gets Fired But Now Old Employer Must Pay Him $200K
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/culture/americas-got-talent.jpg"
+                    alt="picture of americas got talent">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  'America's Got Talent' Season 15 Lives Shows Begin—Here's What to Expect
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/culture/bb-interior.jpg" alt="picture of blockbuster movie room">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    World's Last Blockbuster is Offering the Ultimate '90s Sleepover on Airbnb
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/culture/scott-pilgrim.jpg" alt="picture of a game">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Scott Pilgrim's Creator Wonders Why The Game Is Impossible to Get
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/culture/big-brother-cody.jpg" alt="picture of big brother the show">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Are Keesha and Kevin Still On The Block? 'Big Brother' Veto Spoilers
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SPORTS -->
+      <section class="d-md-flex flex-md-column cats pb-4 border-silver border-bottom">
+        <div class="pt-3 pb-1 pl-3">
+          <h5 class="text-red font-weight-bold">
+            Sports
+          </h5>
+        </div>
+        <div class="d-md-flex">
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/sports/chuck-norris.jpg" alt="picture of chuck norris">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Chuck Norris Says Sports on TV is Vital To America's Recovery From COVID-19
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <article class="col-md-4">
+            <figure>
+              <div>
+                <a href="#">
+                  <img class="w-100" src="./src/assets/images/sports/president-trump-college-football.jpg"
+                    alt="picture of POTUS at college football">
+                </a>
+              </div>
+              <figcaption class="font-weight-bold pt-1">
+                <a href="#" class="text-decoration-none text-dark">
+                  Trump Urges Colleges to Play Football After Big Ten, Pac-12 Cancel In 2020
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+          <!-- ASIDE CATS SECTION -->
+          <div class="flex-column col-md-4 cats-small">
+            <article class="pt-1 pb-1 pt-md-0">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/sports/nick-saban.jpg" alt="picture of nick saban">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    What College Football Coaches Have Said About the Season Not Going Ahead
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/sports/stanley-cup-st-louis-blues.jpg"
+                      alt="picture of the stanley cup">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    Stanley Cup Playoffs: Confirmed Matchups, TV Schedule, Live Stream
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+            <article class="pt-1 pb-1 border-silver border-top">
+              <figure class="d-flex">
+                <div>
+                  <a href="#">
+                    <img src="./src/assets/images/sports/sean-mcvay.jpg" alt="picture of sean mcvay">
+                  </a>
+                </div>
+                <figcaption class="font-weight-bold pl-3">
+                  <a href="#" class="text-decoration-none text-dark font-weight-bold">
+                    'Hard Knocks: Los Angeles'—Five Things to Watch out for in HBO's NFL Series
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- SUBSCRIBE + NEWSLETTER -->
+    <section class="row d-lg-flex border-bottom border-silver">
+      <!-- SUBSCRIBE -->
+      <section class="d-flex flex-column col-lg-8 subscribe p-3">
+        <div>
+          <h6 class="text-red font-weight-bold">
+            SUBSCRIBE
+          </h6>
+        </div>
+        <div class="flex-md-row bg-sign-up p-3 sub-box d-flex flex-column align-items-center">
+          <div>
+            <img class="mag" src="./src/assets/images/main-mag.png" alt="picture of one of the magazine covers">
+          </div>
+          <div
+            class="d-flex flex-column sub-text justify-content-center pl-md-4 mt-n5 mt-md-0 align-items-center align-items-md-start">
+            <h6 class="font-weight-bold">
+              In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+            </h6>
+            <h6 class="font-weight-lighter w-75 mb-md-3 mt-md-1">
+              All Access + Weekly Delivery. Choose A Membership That's Perfect for You!
+            </h6>
+            <button type="button" class="btn text-white bg-red">
+              SUBSCRIBE >
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- NEWSLETTER -->
+      <section class="d-flex flex-column col-lg-4 newsletter p-3">
+        <div>
+          <h6 class="text-red font-weight-bold">
+            NEWSLETTER
+          </h6>
+        </div>
+        <div class="flex-md-row border-silver border d-flex flex-column">
+          <div class="d-none d-md-block news-img">
+            <img class="w-100 newsletter-img" src="./src/assets/images/newsletter.png" alt="picture of the newsletter">
+          </div>
+          <div
+            class="d-flex flex-column p-4 pb-lg-0 pl-lg-2 pr-lg-2 justify-content-center align-items-center align-items-md-start align-items-lg-center w-100">
+            <h5 class="font-weight-bold">
+              The Starting 5
+            </h5>
+            <h6 class="font-weight-lighter mt-2">
+              See why nearly a quarter of a million subscribers begin their day with the Starting 5.
+            </h6>
+            <form action="#" class="w-100 mt-2">
+              <input type="email" class="w-100 mb-2 border-silver border text-secondary" name="email"
+                placeholder="Email address">
+              <button type="submit" class="btn w-100 text-white bg-red">
+                FREE SIGN UP >
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="row no-gutters pt-4">
+    <section
+      class="pl-3 pr-3 pb-2 row d-md-flex justify-content-between flex-column flex-md-row border-silver border-bottom">
+      <div class="d-md-flex">
+        <div class="mb-2">
+          <img class="footer-logo" src="./src/assets/images/newsweek-footer.svg" alt="newsweek main logo">
+        </div>
+        <span class="text-secondary font-weight-light pt-md-3 pl-md-2">
+          © 2020 NEWSWEEK
+        </span>
+      </div>
+      <div class="social-icons pl-1 pt-md-2">
+        <a href="#" class="text-decoration-none text-secondary mr-1">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" class="text-decoration-none text-secondary mr-1">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-decoration-none text-secondary mr-1">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-decoration-none text-secondary mr-1">
+          <i class="fab fa-tumblr"></i>
+        </a>
+        <a href="#" class="text-decoration-none text-secondary">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+    <!-- FOOTER LINKS -->
+    <section class="p-3 row">
+      <ul class="d-flex list-unstyled flex-wrap">
+        <li>
+          <a href="#" class="text-secondary font-weight-bold pr-3 border-0">
+            Editions:
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            U.S. Edition
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            日本
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Pakistan
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Polska
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pl-2 border-0">
+            România
+          </a>
+        </li>
+      </ul>
+      <ul class="list-unstyled d-flex flex-wrap">
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pl-2 pr-2">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Corrections
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Contact Us
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Editorial Guidelines
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Advertise
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Copyright
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Terms & Conditions
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Cookie Policy
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Terms of Sale
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Archive
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pr-2 pl-2">
+            Announcements
+          </a>
+        </li>
+        <li>
+          <a href="#" class="text-secondary text-decoration-none font-weight-light pl-2 border-0">
+            Consent Preferences
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

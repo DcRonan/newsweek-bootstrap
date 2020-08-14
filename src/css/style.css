@@ -329,6 +329,14 @@ footer ul {
     font-size: 20px;
   }
 
+  .news-img {
+    width: 400px;
+  }
+
+  .newsletter-img {
+    height: 295px;
+  }
+
   .my-turn figcaption > a,
   .culture figcaption > a,
   .cats-small figcaption > a {

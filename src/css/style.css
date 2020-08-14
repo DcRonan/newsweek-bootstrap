@@ -318,6 +318,10 @@ footer ul {
     margin-top: 0;
   }
 
+  .in-the-magazine h6 > a {
+    font-size: 20px;
+  }
+
   .my-turn figcaption > a,
   .culture figcaption > a,
   .cats-small figcaption > a {

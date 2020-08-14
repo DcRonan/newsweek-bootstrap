@@ -156,6 +156,11 @@ article p {
   z-index: 1;
 }
 
+.debate-opinion,
+.featured-stories {
+  top: 7rem;    /* <------ For the position sticky */
+}
+
 /*
 ================
      HOVER

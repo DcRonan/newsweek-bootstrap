@@ -132,6 +132,10 @@ article p {
   font-size: smaller;
 }
 
+.pos-sticky {
+  top: 5rem;
+}
+
 /*
 =======================================
         THE DEBATE + OPINION
@@ -156,9 +160,8 @@ article p {
   z-index: 1;
 }
 
-.debate-opinion,
-.featured-stories {
-  top: 7rem;    /* <------ For the position sticky */
+.debate-opinion {
+  top: 6rem;    /* <------ For the position sticky */
 }
 
 /*
@@ -316,6 +319,10 @@ footer ul {
   main {
     font-size: large;
     margin-top: 0;
+  }
+
+  .pos-sticky {
+    top: 7rem;
   }
 
   .in-the-magazine h6 > a {

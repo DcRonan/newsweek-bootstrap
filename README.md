@@ -77,16 +77,11 @@ npm test
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](enter issues url here).
+Feel free to check the [issues page](https://github.com/DcRonan/newsweek-bootstrap/issues).
 
 ### Show your support
 
 Give a ⭐️ if you like this project!
-
-### Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
 
 ### License
 
